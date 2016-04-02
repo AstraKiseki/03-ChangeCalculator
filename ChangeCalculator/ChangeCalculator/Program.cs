@@ -70,7 +70,6 @@ namespace ChangeCalculator
             {
                 Console.WriteLine("Please ask for more change.  You are {0} short.", change);
             }
-
             else
             {
                 Console.WriteLine("The customer's change is {0}.", change);
@@ -83,9 +82,8 @@ namespace ChangeCalculator
                 Nickels = Math.Floor(((((((change % 20) % 10) % 5) % 1) % 0.25m) % 0.1m) / 0.05m);
                 Pennies = Math.Floor((((((((change % 20) % 10) % 5) % 1) % 0.25m) % 0.1m) % 0.05m) / 0.01m);
 
-                Console.WriteLine("Please give the customer {0} twenties, {1} tens, {2} fives, {3} ones, {4} quarters, {5} dimes, {6} nickels, and {7} pennies.", Twenties, Tens, Fives, Ones, Quarters, Dimes, Nickels, Pennies
-);
-                    }
+                Console.WriteLine("Please give the customer {0} twenties, {1} tens, {2} fives, {3} ones, {4} quarters, {5} dimes, {6} nickels, and {7} pennies.", Twenties, Tens, Fives, Ones, Quarters, Dimes, Nickels, Pennies);
+            }
             Console.ReadKey();
         }
     }
