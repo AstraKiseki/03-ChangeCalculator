@@ -48,9 +48,13 @@ namespace ChangeCalculator
                 }
             }
         }
+        /* I think I'm going to try to do an exchange rate thing too.  Dumb and simple, and creates a network?  Hm.  How difficult would this be?
+            I have two options: one is asking what the exchange rate is and convert that, maybe do it like Dollar : Rate to say how much bang per dollar you get?  That seems wise.
+            Wait, this is an example of scope creep!
+            Nevermind.
+             */
         static void Main(string[] args)
         {
-
             decimal price = GetDecimalFromUser("How much does the item cost?");
 
             decimal cost = GetDecimalFromUser("How much has the customer given you?");
